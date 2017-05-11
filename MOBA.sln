@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MOBA.Plugins", "MOBA.Plugins.csproj", "{93BB70B0-1D8C-804E-5F5C-97645EEDF7B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MOBA", "MOBA.csproj", "{93088CAC-7828-FC92-0AC0-17C94473BC48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MOBA.Editor", "MOBA.Editor.csproj", "{87E244BA-98CA-1CF8-F0D6-B46F1A48E944}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93BB70B0-1D8C-804E-5F5C-97645EEDF7B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93BB70B0-1D8C-804E-5F5C-97645EEDF7B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93BB70B0-1D8C-804E-5F5C-97645EEDF7B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93BB70B0-1D8C-804E-5F5C-97645EEDF7B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93088CAC-7828-FC92-0AC0-17C94473BC48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93088CAC-7828-FC92-0AC0-17C94473BC48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93088CAC-7828-FC92-0AC0-17C94473BC48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93088CAC-7828-FC92-0AC0-17C94473BC48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87E244BA-98CA-1CF8-F0D6-B46F1A48E944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87E244BA-98CA-1CF8-F0D6-B46F1A48E944}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87E244BA-98CA-1CF8-F0D6-B46F1A48E944}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87E244BA-98CA-1CF8-F0D6-B46F1A48E944}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
