@@ -1,28 +1,38 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class LobbyWindow : MonoBehaviour {
+public class LobbyWindow : Window
+{
 
     public GameObject roomListPrefab;
     public RectTransform listPanel;
     private List<GameObject> actualRooms;
+    public Text txtBenvinguda;
 
     private void Start()
     {
-        this.actualRooms = new List<GameObject>();
+        //this.actualRooms = new List<GameObject>();
     }
 
     public void RefreshRoomList()
     {
+        this.actualRooms = new List<GameObject>();
+        Debug.Log("Refresh");
         // Netejar llista de sales
-        if (this.actualRooms.Count > 0)
+        if (this.actualRooms != null)
         {
-            foreach (GameObject room in this.actualRooms)
+            if (this.actualRooms.Count > 0)
             {
-                Destroy(room);
+                foreach (GameObject room in this.actualRooms)
+                {
+                    Destroy(room);
+                }
+                this.actualRooms.Clear();
             }
-            this.actualRooms.Clear();
         }
+
+
 
         RoomInfo[] rooms = PhotonNetwork.GetRoomList();
         int j = 100;

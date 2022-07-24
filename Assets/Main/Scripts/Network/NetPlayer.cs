@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NetPlayer : MonoBehaviour {
+public class NetPlayer : MonoBehaviour
+{
 
     public GameObject playerDataCanvasPrefab;
     private GameObject playerDataCanvas;
@@ -11,8 +12,9 @@ public class NetPlayer : MonoBehaviour {
     private Vector3 realPosition;
     private Quaternion realRotation;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         // EL meu personatge
         pv = GetComponent<PhotonView>();
         rb = GetComponent<Rigidbody>();
@@ -41,38 +43,48 @@ public class NetPlayer : MonoBehaviour {
             cs.playerHealthBar = netManagerScript.playerHUD.playerHealthBar;
             cs.playerManaBar = netManagerScript.playerHUD.playerManaBar;
 
+            if (cs.mr_skill != null)
+            {
+                netManagerScript.playerHUD.skill_qImg.sprite = cs.mr_skill.skillSprite;
+                cs.mr_skill.coolDownSlider = netManagerScript.playerHUD.skill_q;
+            }
             if (cs.q_skill != null)
             {
-                netManagerScript.playerHUD.skill_qImg.sprite = cs.q_skill.skillSprite;
-                cs.q_skill.coolDownSlider = netManagerScript.playerHUD.skill_q;
+                netManagerScript.playerHUD.skill_eImg.sprite = cs.q_skill.skillSprite;
+                cs.q_skill.coolDownSlider = netManagerScript.playerHUD.skill_e;
             }
             if (cs.e_skill != null)
             {
-                netManagerScript.playerHUD.skill_eImg.sprite = cs.e_skill.skillSprite;
-                cs.e_skill.coolDownSlider = netManagerScript.playerHUD.skill_e;
+                netManagerScript.playerHUD.skill_mlImg.sprite = cs.e_skill.skillSprite;
+                cs.e_skill.coolDownSlider = netManagerScript.playerHUD.skill_ml;
             }
-            if (cs.ml_skill != null)
+            if (cs.b_skill != null)
             {
-                netManagerScript.playerHUD.skill_mlImg.sprite = cs.ml_skill.skillSprite;
-                cs.ml_skill.coolDownSlider = netManagerScript.playerHUD.skill_ml;
-            }
-            if (cs.mr_skill != null)
-            {
-                netManagerScript.playerHUD.skill_mrImg.sprite = cs.mr_skill.skillSprite;
-                cs.mr_skill.coolDownSlider = netManagerScript.playerHUD.skill_mr;
+                netManagerScript.playerHUD.skill_mrImg.sprite = cs.b_skill.skillSprite;
+                cs.b_skill.coolDownSlider = netManagerScript.playerHUD.skill_mr;
             }
         }
         else
         {
+            string nomJugador = (string)data[0];
+
             // Còpia del personatge a la xarxa
-            this.playerDataCanvas = (GameObject)Instantiate(this.playerDataCanvasPrefab, 
+            this.playerDataCanvas = (GameObject)Instantiate(this.playerDataCanvasPrefab,
                                                             this.transform.position + Vector3.up * 2,
                                                             Quaternion.Euler(new Vector3(50, 0, 0)));
+
+            this.playerDataCanvas.name = "PDC" + nomJugador;
             PlayerDataCanvas pdc = this.playerDataCanvas.GetComponent<PlayerDataCanvas>();
 
             pdc.targetPlayer = this.transform;
-            pdc.playerNameText.text = (string)data[0];
-            
+            pdc.playerNameText.text = nomJugador;
+
+            this.gameObject.name = nomJugador;
+            Unidad unidad = this.gameObject.GetComponent<Unidad>();
+            unidad.Initialize();
+
+            pdc.playerHealthBar.maxValue = unidad.GetMaxHealth();
+            pdc.playerHealthBar.value = unidad.GetHealth();
             cs.playerHealthBar = pdc.playerHealthBar;
 
             // Nom del campió dels equips
@@ -85,7 +97,7 @@ public class NetPlayer : MonoBehaviour {
                 pdc.playerNameText.color = Color.red;
             }
         }
-	}
+    }
 
     private void Update()
     {
@@ -96,14 +108,15 @@ public class NetPlayer : MonoBehaviour {
         }
     }
 
-    void OnDestroy () {
-		if (this.playerDataCanvas != null)
+    void OnDestroy()
+    {
+        if (this.playerDataCanvas != null)
         {
             Destroy(this.playerDataCanvas);
         }
-	}
+    }
 
-    void OnPhotonSerializeView (PhotonStream stream, PhotonMessageInfo info)
+    void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         // Enviem i rebem les dades de posició i velocitat dels jugadors en partida
         // Si estem enviant dades o rebent
@@ -111,7 +124,7 @@ public class NetPlayer : MonoBehaviour {
         {
             stream.SendNext(this.transform.position);
             stream.SendNext(this.transform.rotation);
-        } 
+        }
         else
         {
             this.realPosition = (Vector3)stream.ReceiveNext();

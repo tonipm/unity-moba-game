@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class LoginWindow : MonoBehaviour {
+public class LoginWindow : Window
+{
 
-    //public Dropdown teamSelector;
+    public InputField user, password;
+    public Text error;
 }

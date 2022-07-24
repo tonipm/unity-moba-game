@@ -2,23 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Zyno : Champion {
-
-	// Use this for initialization
-	void Start () {
-        this.health = 800;
-        this.mana = 500;
-        this.healthRegen = 2;
-        this.manaRegen = 2;
-        this.atackDamage = 25;
-        this.atackSpeed = 10;
-        this.abilityPower = 50;
-        this.armour = 100;
-        this.magicArmour = 150;
-        this.movementSpeed = 10;
-        this.level = 1;
-        this.gold = 500;
-        this.experience = 0;
-        this.maxExperience = 500;
+public class Zyno : Unidad {
+    
+    public override void Initialize()
+    {
+        SetMaxHealth(600);
+        SetMaxMana(500);
+        SetHealth(600);
+        SetMana(500);
+        SetHealthRegen(2);
+        SetManaRegen(2);
+        SetAtackDamage(25);
+        SetAtackSpeed(10);
+        SetAbilityPower(50);
+        SetArmour(10);
+        SetMagicArmour(15);
+        SetMovementSpeed(10);
+        SetLevel(1);
+        SetGold(500);
+        SetExperience(0);
+        SetMaxExperience(500);
+        SetDeaths(0);
+        SetAssassinations(0);
+        SetInventory(4);
     }
 }

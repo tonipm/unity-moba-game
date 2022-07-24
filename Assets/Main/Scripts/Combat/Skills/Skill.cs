@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 
 public abstract class Skill : MonoBehaviour {
@@ -7,6 +8,8 @@ public abstract class Skill : MonoBehaviour {
     public Sprite skillSprite;
     [HideInInspector]
     public Slider coolDownSlider;
+    [HideInInspector]
+    public bool execSkill;
 
     protected PhotonView playerPV;
     protected CombatSystem playerCS;
@@ -14,6 +17,10 @@ public abstract class Skill : MonoBehaviour {
     protected float coolDownTime;
     protected float time;
     protected bool canExecute;
+    protected bool isMele;
+    protected Animation animations;
+    protected PlayerController playerController;
+
 
     public void SetCombatSystem(CombatSystem _playerCS)
     {
@@ -32,6 +39,11 @@ public abstract class Skill : MonoBehaviour {
     public void SetPhotonView(PhotonView _pv)
     {
         this.playerPV = _pv;
+    }
+
+    public bool GetIsMele()
+    {
+        return this.isMele;
     }
 
     public int GetManaCost()
@@ -57,7 +69,18 @@ public abstract class Skill : MonoBehaviour {
         }
     }
 
-    public abstract bool Execute();
+    public IEnumerator PararAnimacio(float time)
+    {
+        yield return new WaitForSeconds(time);
+        execSkill = false;
+        animations.Stop();
+        if (playerController != null)
+        {
+            playerController.execAnimationIdle = true;
+        }
+    }
+
+    public abstract bool Execute(int damageChamp);
 
     // Si l'acció fa mal a un objectiu avisa a l'skill
     public abstract void Return(GameObject target);

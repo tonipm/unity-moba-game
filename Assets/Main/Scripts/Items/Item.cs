@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Item : MonoBehaviour {
-
+public abstract class Item {
+    
+    protected int id;
     protected string name;
     protected string description;
     protected int price;
@@ -18,7 +19,21 @@ public abstract class Item : MonoBehaviour {
     protected int manaRegen;
     protected int maxHealth;
     protected int maxMana;
+    protected int health;
+    protected int mana;
     protected int movementSpeed;
+
+    public abstract void Initialize();
+
+    public abstract void Comprar(Unidad champion);
+
+    public int Id
+    {
+        get
+        {
+            return id;
+        }
+    }
 
     public string Name
     {
@@ -123,6 +138,20 @@ public abstract class Item : MonoBehaviour {
         get
         {
             return maxMana;
+        }
+    }
+    public int Health
+    {
+        get
+        {
+            return health;
+        }
+    }
+    public int Mana
+    {
+        get
+        {
+            return mana;
         }
     }
 

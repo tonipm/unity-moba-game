@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CreateRoomWindow : MonoBehaviour {
+public class CreateRoomWindow : Window {
 
     public InputField roomNameField;
-    public Text maxPlayersLabel;
+    public Text maxPlayersLabel, msgError;
     public int maxNumPlayers;
 
     public void ModifyNumPlayers(int num)
@@ -27,10 +27,33 @@ public class CreateRoomWindow : MonoBehaviour {
     public void CreateRoom()
     {
         string roomName = this.roomNameField.text;
-        if (roomName == string.Empty)
+
+        RoomInfo[] rooms = PhotonNetwork.GetRoomList();
+        if (rooms.GetLength(0) == 0)
         {
-            roomName = "Partida";
+            if (roomName == string.Empty)
+            {
+                this.msgError.text = "Posa-li un nom a la partida.";
+            }
+            else
+            {
+                this.msgError.text = "";
+                NetManager.current.CreateRoom(roomName, this.maxNumPlayers);
+            }
         }
-        NetManager.current.CreateRoom(roomName, this.maxNumPlayers);
+        else
+        {
+            foreach (RoomInfo room in rooms)
+            {
+                if (room.name == roomName)
+                {
+                    this.msgError.text = "Ja hi ha una partida amb aquest nom.";
+                }
+                else
+                {
+                    NetManager.current.CreateRoom(roomName, this.maxNumPlayers);
+                }
+            }
+        }
     }
 }

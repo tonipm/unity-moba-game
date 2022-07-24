@@ -11,6 +11,9 @@ public class PlayerDataCanvas : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        this.transform.position = this.targetPlayer.position + Vector3.up * 2;
+        if (targetPlayer != null)
+        {
+            this.transform.position = this.targetPlayer.position + Vector3.up * 2;
+        }
 	}
 }
