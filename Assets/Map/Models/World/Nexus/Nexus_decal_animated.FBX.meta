@@ -1,0 +1,466 @@
+fileFormatVersion: 2
+guid: dfd115f7aa1114f378eccf60e6d8873c
+timeCreated: 1442079738
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Gem_1_Part_1
+    100002: Gem_1_Part_2
+    100004: Gem_1_Part_3
+    100006: Gem_2_Part_1
+    100008: Gem_2_Part_2
+    100010: Gem_2_Part_3
+    100012: Gem_2_Part_4
+    100014: Gem_3_Part_1
+    100016: Gem_3_Part_2
+    100018: Gem_3_Part_3
+    100020: Gem_3_Part_4
+    100022: Gem_4_Part_1
+    100024: Gem_4_Part_2
+    100026: Gem_5_Part_1
+    100028: Gem_5_Part_2
+    100030: Gem_5_Part_3
+    100032: Gem_5_Part_4
+    100034: Gem_6_Part_1
+    100036: Gem_6_Part_2
+    100038: Gem_6_Part_3
+    100040: Nexus_Arm_004
+    100042: Nexus_Arm_005
+    100044: Nexus_Arm_006
+    100046: Nexus_Arm_007
+    100048: Nexus_Arm_008
+    100050: Nexus_Arm_009
+    100052: Nexus_Arm_1
+    100054: Nexus_Arm_2_Part_003
+    100056: Nexus_Arm_2_Part_004
+    100058: Nexus_Arm_2_Part_005
+    100060: Nexus_Arm_2_Part_006
+    100062: Nexus_Arm_2_Part_007
+    100064: Nexus_Arm_2_Part_008
+    100066: Nexus_Arm_2_Part_1
+    100068: Nexus_Arm_2_Part_2
+    100070: Nexus_Arm_3
+    100072: Nexus_decal_2
+    100074: //RootNode
+    400000: Gem_1_Part_1
+    400002: Gem_1_Part_2
+    400004: Gem_1_Part_3
+    400006: Gem_2_Part_1
+    400008: Gem_2_Part_2
+    400010: Gem_2_Part_3
+    400012: Gem_2_Part_4
+    400014: Gem_3_Part_1
+    400016: Gem_3_Part_2
+    400018: Gem_3_Part_3
+    400020: Gem_3_Part_4
+    400022: Gem_4_Part_1
+    400024: Gem_4_Part_2
+    400026: Gem_5_Part_1
+    400028: Gem_5_Part_2
+    400030: Gem_5_Part_3
+    400032: Gem_5_Part_4
+    400034: Gem_6_Part_1
+    400036: Gem_6_Part_2
+    400038: Gem_6_Part_3
+    400040: Nexus_Arm_004
+    400042: Nexus_Arm_005
+    400044: Nexus_Arm_006
+    400046: Nexus_Arm_007
+    400048: Nexus_Arm_008
+    400050: Nexus_Arm_009
+    400052: Nexus_Arm_1
+    400054: Nexus_Arm_2_Part_003
+    400056: Nexus_Arm_2_Part_004
+    400058: Nexus_Arm_2_Part_005
+    400060: Nexus_Arm_2_Part_006
+    400062: Nexus_Arm_2_Part_007
+    400064: Nexus_Arm_2_Part_008
+    400066: Nexus_Arm_2_Part_1
+    400068: Nexus_Arm_2_Part_2
+    400070: Nexus_Arm_3
+    400072: Nexus_decal_2
+    400074: //RootNode
+    2300000: Gem_1_Part_1
+    2300002: Gem_1_Part_2
+    2300004: Gem_1_Part_3
+    2300006: Gem_2_Part_1
+    2300008: Gem_2_Part_2
+    2300010: Gem_2_Part_3
+    2300012: Gem_2_Part_4
+    2300014: Gem_3_Part_1
+    2300016: Gem_3_Part_2
+    2300018: Gem_3_Part_3
+    2300020: Gem_3_Part_4
+    2300022: Gem_4_Part_1
+    2300024: Gem_4_Part_2
+    2300026: Gem_5_Part_1
+    2300028: Gem_5_Part_2
+    2300030: Gem_5_Part_3
+    2300032: Gem_5_Part_4
+    2300034: Gem_6_Part_1
+    2300036: Gem_6_Part_2
+    2300038: Gem_6_Part_3
+    2300040: Nexus_Arm_004
+    2300042: Nexus_Arm_005
+    2300044: Nexus_Arm_006
+    2300046: Nexus_Arm_007
+    2300048: Nexus_Arm_008
+    2300050: Nexus_Arm_009
+    2300052: Nexus_Arm_1
+    2300054: Nexus_Arm_2_Part_003
+    2300056: Nexus_Arm_2_Part_004
+    2300058: Nexus_Arm_2_Part_005
+    2300060: Nexus_Arm_2_Part_006
+    2300062: Nexus_Arm_2_Part_007
+    2300064: Nexus_Arm_2_Part_008
+    2300066: Nexus_Arm_2_Part_1
+    2300068: Nexus_Arm_2_Part_2
+    2300070: Nexus_Arm_3
+    2300072: Nexus_decal_2
+    3300000: Gem_1_Part_1
+    3300002: Gem_1_Part_2
+    3300004: Gem_1_Part_3
+    3300006: Gem_2_Part_1
+    3300008: Gem_2_Part_2
+    3300010: Gem_2_Part_3
+    3300012: Gem_2_Part_4
+    3300014: Gem_3_Part_1
+    3300016: Gem_3_Part_2
+    3300018: Gem_3_Part_3
+    3300020: Gem_3_Part_4
+    3300022: Gem_4_Part_1
+    3300024: Gem_4_Part_2
+    3300026: Gem_5_Part_1
+    3300028: Gem_5_Part_2
+    3300030: Gem_5_Part_3
+    3300032: Gem_5_Part_4
+    3300034: Gem_6_Part_1
+    3300036: Gem_6_Part_2
+    3300038: Gem_6_Part_3
+    3300040: Nexus_Arm_004
+    3300042: Nexus_Arm_005
+    3300044: Nexus_Arm_006
+    3300046: Nexus_Arm_007
+    3300048: Nexus_Arm_008
+    3300050: Nexus_Arm_009
+    3300052: Nexus_Arm_1
+    3300054: Nexus_Arm_2_Part_003
+    3300056: Nexus_Arm_2_Part_004
+    3300058: Nexus_Arm_2_Part_005
+    3300060: Nexus_Arm_2_Part_006
+    3300062: Nexus_Arm_2_Part_007
+    3300064: Nexus_Arm_2_Part_008
+    3300066: Nexus_Arm_2_Part_1
+    3300068: Nexus_Arm_2_Part_2
+    3300070: Nexus_Arm_3
+    3300072: Nexus_decal_2
+    4300000: Gem_1_Part_1
+    4300002: Gem_1_Part_2
+    4300004: Gem_1_Part_3
+    4300006: Gem_2_Part_1
+    4300008: Gem_2_Part_2
+    4300010: Gem_2_Part_3
+    4300012: Gem_2_Part_4
+    4300014: Gem_3_Part_1
+    4300016: Gem_3_Part_2
+    4300018: Gem_3_Part_3
+    4300020: Gem_3_Part_4
+    4300022: Gem_4_Part_1
+    4300024: Gem_4_Part_2
+    4300026: Gem_5_Part_1
+    4300028: Gem_5_Part_2
+    4300030: Gem_5_Part_3
+    4300032: Gem_5_Part_4
+    4300034: Gem_6_Part_1
+    4300036: Gem_6_Part_2
+    4300038: Gem_6_Part_3
+    4300040: Nexus_Arm_3
+    4300042: Nexus_Arm_1
+    4300044: Nexus_Arm_2_Part_1
+    4300046: Nexus_Arm_2_Part_2
+    4300048: Nexus_Arm_004
+    4300050: Nexus_Arm_2_Part_003
+    4300052: Nexus_Arm_2_Part_004
+    4300054: Nexus_Arm_005
+    4300056: Nexus_Arm_006
+    4300058: Nexus_Arm_2_Part_005
+    4300060: Nexus_Arm_2_Part_006
+    4300062: Nexus_Arm_007
+    4300064: Nexus_Arm_008
+    4300066: Nexus_Arm_2_Part_007
+    4300068: Nexus_Arm_2_Part_008
+    4300070: Nexus_Arm_009
+    4300072: Nexus_decal_2
+    7400000: Nexus_Destoy
+    7400002: Nexus_Idle
+    9500000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Nexus_Destoy
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: .769249737
+        functionName: WinEvent
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Gem_1_Part_1
+        weight: 1
+      - path: Gem_1_Part_2
+        weight: 1
+      - path: Gem_1_Part_3
+        weight: 1
+      - path: Gem_2_Part_1
+        weight: 1
+      - path: Gem_2_Part_2
+        weight: 1
+      - path: Gem_2_Part_3
+        weight: 1
+      - path: Gem_2_Part_4
+        weight: 1
+      - path: Gem_3_Part_1
+        weight: 1
+      - path: Gem_3_Part_2
+        weight: 1
+      - path: Gem_3_Part_3
+        weight: 1
+      - path: Gem_3_Part_4
+        weight: 1
+      - path: Gem_4_Part_1
+        weight: 1
+      - path: Gem_4_Part_2
+        weight: 1
+      - path: Gem_5_Part_1
+        weight: 1
+      - path: Gem_5_Part_2
+        weight: 1
+      - path: Gem_5_Part_3
+        weight: 1
+      - path: Gem_5_Part_4
+        weight: 1
+      - path: Gem_6_Part_1
+        weight: 1
+      - path: Gem_6_Part_2
+        weight: 1
+      - path: Gem_6_Part_3
+        weight: 1
+      - path: Nexus_Arm_1
+        weight: 1
+      - path: Nexus_Arm_2_Part_1
+        weight: 1
+      - path: Nexus_Arm_2_Part_2
+        weight: 1
+      - path: Nexus_Arm_2_Part_003
+        weight: 1
+      - path: Nexus_Arm_2_Part_004
+        weight: 1
+      - path: Nexus_Arm_2_Part_005
+        weight: 1
+      - path: Nexus_Arm_2_Part_006
+        weight: 1
+      - path: Nexus_Arm_2_Part_007
+        weight: 1
+      - path: Nexus_Arm_2_Part_008
+        weight: 1
+      - path: Nexus_Arm_3
+        weight: 1
+      - path: Nexus_Arm_004
+        weight: 1
+      - path: Nexus_Arm_005
+        weight: 1
+      - path: Nexus_Arm_006
+        weight: 1
+      - path: Nexus_Arm_007
+        weight: 1
+      - path: Nexus_Arm_008
+        weight: 1
+      - path: Nexus_Arm_009
+        weight: 1
+      - path: Nexus_decal_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Nexus_Idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Gem_1_Part_1
+        weight: 1
+      - path: Gem_1_Part_2
+        weight: 1
+      - path: Gem_1_Part_3
+        weight: 1
+      - path: Gem_2_Part_1
+        weight: 1
+      - path: Gem_2_Part_2
+        weight: 1
+      - path: Gem_2_Part_3
+        weight: 1
+      - path: Gem_2_Part_4
+        weight: 1
+      - path: Gem_3_Part_1
+        weight: 1
+      - path: Gem_3_Part_2
+        weight: 1
+      - path: Gem_3_Part_3
+        weight: 1
+      - path: Gem_3_Part_4
+        weight: 1
+      - path: Gem_4_Part_1
+        weight: 1
+      - path: Gem_4_Part_2
+        weight: 1
+      - path: Gem_5_Part_1
+        weight: 1
+      - path: Gem_5_Part_2
+        weight: 1
+      - path: Gem_5_Part_3
+        weight: 1
+      - path: Gem_5_Part_4
+        weight: 1
+      - path: Gem_6_Part_1
+        weight: 1
+      - path: Gem_6_Part_2
+        weight: 1
+      - path: Gem_6_Part_3
+        weight: 1
+      - path: Nexus_Arm_1
+        weight: 1
+      - path: Nexus_Arm_2_Part_1
+        weight: 1
+      - path: Nexus_Arm_2_Part_2
+        weight: 1
+      - path: Nexus_Arm_2_Part_003
+        weight: 1
+      - path: Nexus_Arm_2_Part_004
+        weight: 1
+      - path: Nexus_Arm_2_Part_005
+        weight: 1
+      - path: Nexus_Arm_2_Part_006
+        weight: 1
+      - path: Nexus_Arm_2_Part_007
+        weight: 1
+      - path: Nexus_Arm_2_Part_008
+        weight: 1
+      - path: Nexus_Arm_3
+        weight: 1
+      - path: Nexus_Arm_004
+        weight: 1
+      - path: Nexus_Arm_005
+        weight: 1
+      - path: Nexus_Arm_006
+        weight: 1
+      - path: Nexus_Arm_007
+        weight: 1
+      - path: Nexus_Arm_008
+        weight: 1
+      - path: Nexus_Arm_009
+        weight: 1
+      - path: Nexus_decal_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -16,12 +16,12 @@ public class SkillHeal : Skill {
         this.coolDownTime = 10;
         this.time = this.coolDownTime;
     }
-
-    public override bool Execute()
+        
+    public override bool Execute(int damageChamp)
     {
         if (this.canExecute)
         {
-            this.playerPV.RPC("ModifyHealth", PhotonTargets.All, this.amount);
+            this.playerPV.RPC("ModifyHealth", PhotonTargets.All, this.amount,false, this.gameObject.name);
 
             PhotonNetwork.Instantiate(this.prefabActionName, this.transform.position, Quaternion.LookRotation(Vector3.up), 0);
 

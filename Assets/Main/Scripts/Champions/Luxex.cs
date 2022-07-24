@@ -2,23 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Luxex : Champion {
-    // Use this for initialization
-    void Start()
+public class Luxex : Unidad {
+
+    public override void Initialize()
     {
-        this.health = 700;
-        this.mana = 700;
-        this.healthRegen = 4;
-        this.manaRegen = 3;
-        this.atackDamage = 20;
-        this.atackSpeed = 10;
-        this.abilityPower = 60;
-        this.armour = 100;
-        this.magicArmour = 170;
-        this.movementSpeed = 10;
-        this.level = 1;
-        this.gold = 500;
-        this.experience = 0;
-        this.maxExperience = 500;
+        SetMaxHealth(700);
+        SetMaxMana(700);
+        SetHealth(700);
+        SetMana(700);
+        SetHealthRegen(4);
+        SetManaRegen(3);
+        SetAtackDamage(20);
+        SetAtackSpeed(10);
+        SetAbilityPower(60);
+        SetArmour(10);
+        SetMagicArmour(16);
+        SetMovementSpeed(10);
+        SetLevel(1);
+        SetGold(500);
+        SetExperience(0);
+        SetMaxExperience(500);
+        SetDeaths(0);
+        SetAssassinations(0);
+        SetInventory(4);
     }
 }

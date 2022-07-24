@@ -3,12 +3,12 @@ using UnityEngine.UI;
 
 public class ChampTeamSelectWindow : MonoBehaviour {
 
-    public Text championName, teamName;
+    public Text championName, teamName, errorSelect;
     public int teamId;
 
     public void SetChampionName(string name)
     {
-        this.championName.text = name;
+        this.championName.text = "Champions/" + name;
     }
 
     public void SetTeam(int _teamId)

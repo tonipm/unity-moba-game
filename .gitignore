@@ -1,0 +1,7 @@
+Builds/*/
+Builds/*.exe
+Temp
+.vs
+*.log
+*.sln
+*.csproj
